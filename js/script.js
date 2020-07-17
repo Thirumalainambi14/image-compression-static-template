@@ -22,6 +22,7 @@ fileElem.addEventListener("change", handleFile, false);
 
 function handleFile() {
   downloadBtn.style.display = "none";
+  compressBtn.style.display = "none";
   img.style = "filter:blur(0)); opacity: 1";
   if (!this.files.length) {
     filename.placeholder = "No files are selected";

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Image Compressor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="left-box">
+        <h1 class="heading">Image Compressor</h1>
+        <span><i>compress the image using 3 steps.</i></span>
+
+        <div class="list">
+          <ol>
+            <li>Choose an image.</li>
+            <li>Press Compress.</li>
+            <li>Download the Image.</li>
+          </ol>
+        </div>
+
+        <div class="file-container">
+          <input type="file" id="fileElem" accept="image/*" style="display:none">
+          <input type="text" name="filename" id="filename" placeholder="No files are Selected">
+          <a href="#" id="fileSelect" class="fileSelect">Choose a File</a>
+        </div>
+        <div class="compress">
+          <button class="compressBtn" id="compressBtn">Compress</button>
+        </div>
+      </div>
+      <div class="right-box">
+        <div class="download">
+          <a download="image" class="downloadBtn" id="downloadBtn">Download</a>
+        </div>
+        <img src="images/broken.png" class="image" id="imageHolder" alt="" width="60">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
